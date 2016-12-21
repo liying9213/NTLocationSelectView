@@ -219,6 +219,7 @@
 				TargetAttributes = {
 					3DBDA7CF1E09337200C69DC2 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = WYNJ5A22VB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -437,6 +438,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WYNJ5A22VB;
 				INFOPLIST_FILE = NTLocationSelectView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.izhixin.NTLocationSelectView;
@@ -450,6 +452,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WYNJ5A22VB;
 				INFOPLIST_FILE = NTLocationSelectView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.izhixin.NTLocationSelectView;
