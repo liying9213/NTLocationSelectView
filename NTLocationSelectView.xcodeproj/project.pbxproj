@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DBDA7D51E09337200C69DC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDA7D41E09337200C69DC2 /* main.m */; };
+		3DBDA7D81E09337200C69DC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDA7D71E09337200C69DC2 /* AppDelegate.m */; };
+		3DBDA7DB1E09337200C69DC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDA7DA1E09337200C69DC2 /* ViewController.m */; };
+		3DBDA7DE1E09337200C69DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBDA7DC1E09337200C69DC2 /* Main.storyboard */; };
+		3DBDA7E01E09337200C69DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBDA7DF1E09337200C69DC2 /* Assets.xcassets */; };
+		3DBDA7E31E09337200C69DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBDA7E11E09337200C69DC2 /* LaunchScreen.storyboard */; };
+		3DBDA7FF1E09349100C69DC2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDA7ED1E09349100C69DC2 /* UIView+Frame.m */; };
+		3DBDA8001E09349100C69DC2 /* NTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDA7F01E09349100C69DC2 /* NTLocation.m */; };
+		3DBDA8011E09349100C69DC2 /* NTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDA7F21E09349100C69DC2 /* NTLocationManager.m */; };
+		3DBDA8021E09349100C69DC2 /* NTLocation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3DBDA7F41E09349100C69DC2 /* NTLocation.bundle */; };
+		3DBDA8031E09349100C69DC2 /* NTChooseLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDA7F71E09349100C69DC2 /* NTChooseLocationView.m */; };
+		3DBDA8041E09349100C69DC2 /* NTLocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDA7F91E09349100C69DC2 /* NTLocationTableViewCell.m */; };
+		3DBDA8061E09349100C69DC2 /* NTLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDA7FC1E09349100C69DC2 /* NTLocationView.m */; };
+		3DBDA8071E09349100C69DC2 /* NTShowLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBDA7FE1E09349100C69DC2 /* NTShowLocationView.m */; };
+		3DBDA80A1E0966AA00C69DC2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBDA8091E0966AA00C69DC2 /* libsqlite3.tbd */; };
+		8D87886EEC5A7044DB7975BD /* libPods-NTLocationSelectView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 190B24296CD399679047EDB8 /* libPods-NTLocationSelectView.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		190B24296CD399679047EDB8 /* libPods-NTLocationSelectView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NTLocationSelectView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D72E03FC3A00C7A54C54C76 /* Pods-NTLocationSelectView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTLocationSelectView.release.xcconfig"; path = "Pods/Target Support Files/Pods-NTLocationSelectView/Pods-NTLocationSelectView.release.xcconfig"; sourceTree = "<group>"; };
+		3DBDA7D01E09337200C69DC2 /* NTLocationSelectView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTLocationSelectView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBDA7D41E09337200C69DC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DBDA7D61E09337200C69DC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DBDA7D71E09337200C69DC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DBDA7D91E09337200C69DC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3DBDA7DA1E09337200C69DC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3DBDA7DD1E09337200C69DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DBDA7DF1E09337200C69DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DBDA7E21E09337200C69DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DBDA7E41E09337200C69DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DBDA7EC1E09349100C69DC2 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		3DBDA7ED1E09349100C69DC2 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		3DBDA7EF1E09349100C69DC2 /* NTLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLocation.h; sourceTree = "<group>"; };
+		3DBDA7F01E09349100C69DC2 /* NTLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTLocation.m; sourceTree = "<group>"; };
+		3DBDA7F11E09349100C69DC2 /* NTLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLocationManager.h; sourceTree = "<group>"; };
+		3DBDA7F21E09349100C69DC2 /* NTLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTLocationManager.m; sourceTree = "<group>"; };
+		3DBDA7F41E09349100C69DC2 /* NTLocation.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NTLocation.bundle; sourceTree = "<group>"; };
+		3DBDA7F61E09349100C69DC2 /* NTChooseLocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTChooseLocationView.h; sourceTree = "<group>"; };
+		3DBDA7F71E09349100C69DC2 /* NTChooseLocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTChooseLocationView.m; sourceTree = "<group>"; };
+		3DBDA7F81E09349100C69DC2 /* NTLocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLocationTableViewCell.h; sourceTree = "<group>"; };
+		3DBDA7F91E09349100C69DC2 /* NTLocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTLocationTableViewCell.m; sourceTree = "<group>"; };
+		3DBDA7FB1E09349100C69DC2 /* NTLocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLocationView.h; sourceTree = "<group>"; };
+		3DBDA7FC1E09349100C69DC2 /* NTLocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTLocationView.m; sourceTree = "<group>"; };
+		3DBDA7FD1E09349100C69DC2 /* NTShowLocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTShowLocationView.h; sourceTree = "<group>"; };
+		3DBDA7FE1E09349100C69DC2 /* NTShowLocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTShowLocationView.m; sourceTree = "<group>"; };
+		3DBDA8091E0966AA00C69DC2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FD4E6D494FDF5A61139810EF /* Pods-NTLocationSelectView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTLocationSelectView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NTLocationSelectView/Pods-NTLocationSelectView.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DBDA7CD1E09337200C69DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBDA80A1E0966AA00C69DC2 /* libsqlite3.tbd in Frameworks */,
+				8D87886EEC5A7044DB7975BD /* libPods-NTLocationSelectView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DBDA7C71E09337200C69DC2 = {
+			isa = PBXGroup;
+			children = (
+				3DBDA7D21E09337200C69DC2 /* NTLocationSelectView */,
+				3DBDA7D11E09337200C69DC2 /* Products */,
+				54F3186BF5E619DA0365C62F /* Pods */,
+				88CD179D94BFC66AD203CF7E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DBDA7D11E09337200C69DC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DBDA7D01E09337200C69DC2 /* NTLocationSelectView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DBDA7D21E09337200C69DC2 /* NTLocationSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				3DBDA7EA1E09349100C69DC2 /* locationSelectView */,
+				3DBDA7D61E09337200C69DC2 /* AppDelegate.h */,
+				3DBDA7D71E09337200C69DC2 /* AppDelegate.m */,
+				3DBDA7D91E09337200C69DC2 /* ViewController.h */,
+				3DBDA7DA1E09337200C69DC2 /* ViewController.m */,
+				3DBDA7DC1E09337200C69DC2 /* Main.storyboard */,
+				3DBDA7DF1E09337200C69DC2 /* Assets.xcassets */,
+				3DBDA7E11E09337200C69DC2 /* LaunchScreen.storyboard */,
+				3DBDA7E41E09337200C69DC2 /* Info.plist */,
+				3DBDA7D31E09337200C69DC2 /* Supporting Files */,
+			);
+			path = NTLocationSelectView;
+			sourceTree = "<group>";
+		};
+		3DBDA7D31E09337200C69DC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DBDA7D41E09337200C69DC2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DBDA7EA1E09349100C69DC2 /* locationSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				3DBDA7EB1E09349100C69DC2 /* Category */,
+				3DBDA7EE1E09349100C69DC2 /* model */,
+				3DBDA7F31E09349100C69DC2 /* Resources */,
+				3DBDA7F51E09349100C69DC2 /* view */,
+			);
+			path = locationSelectView;
+			sourceTree = "<group>";
+		};
+		3DBDA7EB1E09349100C69DC2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3DBDA7EC1E09349100C69DC2 /* UIView+Frame.h */,
+				3DBDA7ED1E09349100C69DC2 /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3DBDA7EE1E09349100C69DC2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3DBDA7EF1E09349100C69DC2 /* NTLocation.h */,
+				3DBDA7F01E09349100C69DC2 /* NTLocation.m */,
+				3DBDA7F11E09349100C69DC2 /* NTLocationManager.h */,
+				3DBDA7F21E09349100C69DC2 /* NTLocationManager.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		3DBDA7F31E09349100C69DC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DBDA7F41E09349100C69DC2 /* NTLocation.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DBDA7F51E09349100C69DC2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3DBDA7F61E09349100C69DC2 /* NTChooseLocationView.h */,
+				3DBDA7F71E09349100C69DC2 /* NTChooseLocationView.m */,
+				3DBDA7F81E09349100C69DC2 /* NTLocationTableViewCell.h */,
+				3DBDA7F91E09349100C69DC2 /* NTLocationTableViewCell.m */,
+				3DBDA7FB1E09349100C69DC2 /* NTLocationView.h */,
+				3DBDA7FC1E09349100C69DC2 /* NTLocationView.m */,
+				3DBDA7FD1E09349100C69DC2 /* NTShowLocationView.h */,
+				3DBDA7FE1E09349100C69DC2 /* NTShowLocationView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		54F3186BF5E619DA0365C62F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD4E6D494FDF5A61139810EF /* Pods-NTLocationSelectView.debug.xcconfig */,
+				1D72E03FC3A00C7A54C54C76 /* Pods-NTLocationSelectView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88CD179D94BFC66AD203CF7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DBDA8091E0966AA00C69DC2 /* libsqlite3.tbd */,
+				190B24296CD399679047EDB8 /* libPods-NTLocationSelectView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DBDA7CF1E09337200C69DC2 /* NTLocationSelectView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DBDA7E71E09337200C69DC2 /* Build configuration list for PBXNativeTarget "NTLocationSelectView" */;
+			buildPhases = (
+				0B52D05EBB42C9AB9BBD3CF4 /* [CP] Check Pods Manifest.lock */,
+				3DBDA7CC1E09337200C69DC2 /* Sources */,
+				3DBDA7CD1E09337200C69DC2 /* Frameworks */,
+				3DBDA7CE1E09337200C69DC2 /* Resources */,
+				1F9C96AC21B2A7A4EF8D5230 /* [CP] Embed Pods Frameworks */,
+				6DC7CD5586BE301057E2580F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTLocationSelectView;
+			productName = NTLocationSelectView;
+			productReference = 3DBDA7D01E09337200C69DC2 /* NTLocationSelectView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DBDA7C81E09337200C69DC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = liying;
+				TargetAttributes = {
+					3DBDA7CF1E09337200C69DC2 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3DBDA7CB1E09337200C69DC2 /* Build configuration list for PBXProject "NTLocationSelectView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DBDA7C71E09337200C69DC2;
+			productRefGroup = 3DBDA7D11E09337200C69DC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DBDA7CF1E09337200C69DC2 /* NTLocationSelectView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DBDA7CE1E09337200C69DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBDA8021E09349100C69DC2 /* NTLocation.bundle in Resources */,
+				3DBDA7E31E09337200C69DC2 /* LaunchScreen.storyboard in Resources */,
+				3DBDA7E01E09337200C69DC2 /* Assets.xcassets in Resources */,
+				3DBDA7DE1E09337200C69DC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B52D05EBB42C9AB9BBD3CF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1F9C96AC21B2A7A4EF8D5230 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NTLocationSelectView/Pods-NTLocationSelectView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DC7CD5586BE301057E2580F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NTLocationSelectView/Pods-NTLocationSelectView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DBDA7CC1E09337200C69DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBDA7FF1E09349100C69DC2 /* UIView+Frame.m in Sources */,
+				3DBDA7DB1E09337200C69DC2 /* ViewController.m in Sources */,
+				3DBDA8061E09349100C69DC2 /* NTLocationView.m in Sources */,
+				3DBDA8041E09349100C69DC2 /* NTLocationTableViewCell.m in Sources */,
+				3DBDA8071E09349100C69DC2 /* NTShowLocationView.m in Sources */,
+				3DBDA7D81E09337200C69DC2 /* AppDelegate.m in Sources */,
+				3DBDA7D51E09337200C69DC2 /* main.m in Sources */,
+				3DBDA8011E09349100C69DC2 /* NTLocationManager.m in Sources */,
+				3DBDA8031E09349100C69DC2 /* NTChooseLocationView.m in Sources */,
+				3DBDA8001E09349100C69DC2 /* NTLocation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DBDA7DC1E09337200C69DC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBDA7DD1E09337200C69DC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DBDA7E11E09337200C69DC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBDA7E21E09337200C69DC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DBDA7E51E09337200C69DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3DBDA7E61E09337200C69DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DBDA7E81E09337200C69DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD4E6D494FDF5A61139810EF /* Pods-NTLocationSelectView.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NTLocationSelectView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.izhixin.NTLocationSelectView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DBDA7E91E09337200C69DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D72E03FC3A00C7A54C54C76 /* Pods-NTLocationSelectView.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NTLocationSelectView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.izhixin.NTLocationSelectView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DBDA7CB1E09337200C69DC2 /* Build configuration list for PBXProject "NTLocationSelectView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBDA7E51E09337200C69DC2 /* Debug */,
+				3DBDA7E61E09337200C69DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DBDA7E71E09337200C69DC2 /* Build configuration list for PBXNativeTarget "NTLocationSelectView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBDA7E81E09337200C69DC2 /* Debug */,
+				3DBDA7E91E09337200C69DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DBDA7C81E09337200C69DC2 /* Project object */;
+}
