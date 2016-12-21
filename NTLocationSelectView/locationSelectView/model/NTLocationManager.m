@@ -57,7 +57,8 @@ static NTLocationManager *shareInstance = nil;
 
 - (void)initializeDB{
     NSString *resourceBundle = [[NSBundle mainBundle] pathForResource:@"NTLocation" ofType:@"bundle"];
-    self.fmdb = [FMDatabase databaseWithPath:[[NSBundle bundleWithPath:resourceBundle] pathForResource:@"DB/location" ofType:@"db"]];
+    self.fmdb = [[FMDatabase alloc] initWithPath:[[NSBundle bundleWithPath:resourceBundle] pathForResource:@"DB/location" ofType:@"db"]];
+//    self.fmdb = [FMDatabase databaseWithPath:[[NSBundle bundleWithPath:resourceBundle] pathForResource:@"DB/location" ofType:@"db"]];
     [self.fmdb open];
 }
 

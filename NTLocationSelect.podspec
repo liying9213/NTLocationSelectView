@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "liying" => "tiantian9213@gmail.com" }
   s.platform     = :ios
-  s.platform     = :ios, "7.0"
-  s.ios.deployment_target = "7.0"
+  s.platform     = :ios, "8.0"
+  s.ios.deployment_target = "8.0"
   s.source       = { :git => "https://github.com/liying9213/NTLocationSelectView.git", :tag => "#{s.version}" }
   s.source_files  = "NTLocationSelectView/locationSelectView/**/*.{h,m}"
   s.resource     = 'NTLocationSelectView/locationSelectView/**/NTLocation.bundle'
