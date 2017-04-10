@@ -12,9 +12,9 @@
 
 @property (nonatomic, copy)NSString * locationName;
 
-@property (nonatomic, assign)NSInteger currentID;
+@property (nonatomic, copy)NSString * currentID;
 
-@property (nonatomic, assign)NSInteger fatherID;
+@property (nonatomic, copy)NSString * fatherID;
 
 @property (nonatomic,assign) BOOL  isSelected;
 

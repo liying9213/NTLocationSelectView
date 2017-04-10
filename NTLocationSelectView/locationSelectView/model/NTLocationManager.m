@@ -58,7 +58,6 @@ static NTLocationManager *shareInstance = nil;
 - (void)initializeDB{
     NSString *resourceBundle = [[NSBundle mainBundle] pathForResource:@"NTLocation" ofType:@"bundle"];
     self.fmdb = [[FMDatabase alloc] initWithPath:[[NSBundle bundleWithPath:resourceBundle] pathForResource:@"DB/location" ofType:@"db"]];
-//    self.fmdb = [FMDatabase databaseWithPath:[[NSBundle bundleWithPath:resourceBundle] pathForResource:@"DB/location" ofType:@"db"]];
     [self.fmdb open];
 }
 
@@ -70,7 +69,7 @@ static NTLocationManager *shareInstance = nil;
         while ([result next]) {
             NTLocation *model = [[NTLocation alloc] init];
             model.locationName = [result stringForColumn:@"name"];
-            model.currentID = [result intForColumn:@"id"];
+            model.currentID = [result stringForColumn:@"id"];
             [array addObject:model];
         }
         [self.fmdb close];
@@ -79,16 +78,16 @@ static NTLocationManager *shareInstance = nil;
     return nil;
 }
 
-- (NSMutableArray *)getCityDataBy:(NSInteger)ID{
+- (NSMutableArray *)getCityDataBy:(NSString *)ID{
     if ([self.fmdb  open]) {
-        NSString *sql = [NSString stringWithFormat:@"SELECT * FROM City WHERE province_id = %ld ORDER BY id",(long)ID];
+        NSString *sql = [NSString stringWithFormat:@"SELECT * FROM City WHERE province_id like '%@' ORDER BY id",ID];
         FMResultSet *result = [self.fmdb  executeQuery:sql];
         NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:0];
         while ([result next]) {
             NTLocation *model = [[NTLocation alloc] init];
             model.locationName = [result stringForColumn:@"name"];
-            model.currentID = [result intForColumn:@"id"];
-            model.fatherID = [result intForColumn:@"province_id"];
+            model.currentID = [result stringForColumn:@"id"];
+            model.fatherID = [result stringForColumn:@"province_id"];
             [array addObject:model];
         }
         [self.fmdb close];
@@ -97,16 +96,16 @@ static NTLocationManager *shareInstance = nil;
     return nil;
 }
 
-- (NSMutableArray *)getCountyDataBy:(NSInteger)ID{
+- (NSMutableArray *)getCountyDataBy:(NSString *)ID{
     if ([self.fmdb  open]) {
-        NSString *sql = [NSString stringWithFormat:@"SELECT * FROM County WHERE city_id = %ld ORDER BY id",(long)ID];
+        NSString *sql = [NSString stringWithFormat:@"SELECT * FROM County WHERE city_id like '%@' ORDER BY id",ID];
         FMResultSet *result = [self.fmdb  executeQuery:sql];
         NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:0];
         while ([result next]) {
             NTLocation *model = [[NTLocation alloc] init];
             model.locationName = [result stringForColumn:@"name"];
-            model.currentID = [result intForColumn:@"id"];
-            model.fatherID = [result intForColumn:@"city_id"];
+            model.currentID = [result stringForColumn:@"id"];
+            model.fatherID = [result stringForColumn:@"city_id"];
             [array addObject:model];
         }
         [self.fmdb close];
@@ -115,16 +114,16 @@ static NTLocationManager *shareInstance = nil;
     return nil;
 }
 
-- (NSMutableArray *)getStreetDataBy:(NSInteger)ID{
+- (NSMutableArray *)getStreetDataBy:(NSString *)ID{
     if ([self.fmdb  open]) {
-        NSString *sql = [NSString stringWithFormat:@"SELECT * FROM Street WHERE county_id = %ld ORDER BY id",(long)ID];
+        NSString *sql = [NSString stringWithFormat:@"SELECT * FROM Street WHERE county_id like '%@' ORDER BY id",ID];
         FMResultSet *result = [self.fmdb  executeQuery:sql];
         NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:0];
         while ([result next]) {
             NTLocation *model = [[NTLocation alloc] init];
             model.locationName = [result stringForColumn:@"name"];
-            model.currentID = [result intForColumn:@"id"];
-            model.fatherID = [result intForColumn:@"county_id"];
+            model.currentID = [result stringForColumn:@"id"];
+            model.fatherID = [result stringForColumn:@"county_id"];
             [array addObject:model];
         }
         [self.fmdb close];

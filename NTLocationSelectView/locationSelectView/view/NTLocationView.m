@@ -413,13 +413,13 @@
 - (void)resetViewWithData:(NSString *)areaCode{
     NSArray * ary = [areaCode componentsSeparatedByString:@";"];
     if (ary.count>1) {
-        self.cityDataSouce = [[NTLocationManager sharedManager] getCityDataBy:[ary[0] integerValue]];
+        self.cityDataSouce = [[NTLocationManager sharedManager] getCityDataBy:ary[0]];
     }
     if (ary.count>2) {
-        self.countyDataSouce = [[NTLocationManager sharedManager] getCountyDataBy:[ary[1] integerValue]];
+        self.countyDataSouce = [[NTLocationManager sharedManager] getCountyDataBy:ary[1]];
     }
     if (ary.count>3) {
-        self.streetDataSouce = [[NTLocationManager sharedManager] getStreetDataBy:[ary[2] integerValue]];
+        self.streetDataSouce = [[NTLocationManager sharedManager] getStreetDataBy:ary[2]];
     }
     
     for (int i = 0 ; i<ary.count-1; i++) {

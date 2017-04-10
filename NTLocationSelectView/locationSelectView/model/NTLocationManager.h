@@ -14,10 +14,10 @@
 
 - (NSMutableArray *)getProvinceData;
 
-- (NSMutableArray *)getCityDataBy:(NSInteger)ID;
+- (NSMutableArray *)getCityDataBy:(NSString *)ID;
 
-- (NSMutableArray *)getCountyDataBy:(NSInteger)ID;
+- (NSMutableArray *)getCountyDataBy:(NSString *)ID;
 
-- (NSMutableArray *)getStreetDataBy:(NSInteger)ID;
+- (NSMutableArray *)getStreetDataBy:(NSString *)ID;
 
 @end
