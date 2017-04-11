@@ -444,7 +444,7 @@
 - (void)setSelectedWithArray:(NSArray *)selectAry{
     if (selectAry.count>0) {
         for (NTLocation * item in self.dataSouce) {
-            if (item.currentID == [selectAry[0] integerValue]) {
+            if ([item.currentID isEqualToString: selectAry[0]]) {
                 NSIndexPath * indexPath = [NSIndexPath indexPathForRow:[self.dataSouce indexOfObject:item] inSection:0];
                 UITableView * tableView  = self.tableViews.firstObject;
                 [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionMiddle];
@@ -459,7 +459,7 @@
     
     if (selectAry.count>1) {
         for (NTLocation * item in self.cityDataSouce) {
-            if (item.currentID == [selectAry[1] integerValue]) {
+            if ([item.currentID isEqualToString: selectAry[1]]) {
                 NSIndexPath * indexPath = [NSIndexPath indexPathForRow:[self.cityDataSouce indexOfObject:item] inSection:0];
                 UITableView * tableView  = self.tableViews[1];
                 [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionMiddle];
@@ -474,7 +474,7 @@
     
     if (selectAry.count>2) {
         for (NTLocation * item in self.countyDataSouce) {
-            if (item.currentID == [selectAry[2] integerValue]) {
+            if ([item.currentID isEqualToString: selectAry[2]]) {
                 NSIndexPath * indexPath = [NSIndexPath indexPathForRow:[self.countyDataSouce indexOfObject:item] inSection:0];
                 UITableView * tableView  = self.tableViews[2];
                 [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionMiddle];
@@ -489,7 +489,7 @@
     
     if (selectAry.count>3) {
         for (NTLocation * item in self.streetDataSouce) {
-            if (item.currentID == [selectAry[3] integerValue]) {
+            if ([item.currentID isEqualToString: selectAry[3]]) {
                 NSIndexPath * indexPath = [NSIndexPath indexPathForRow:[self.streetDataSouce indexOfObject:item] inSection:0];
                 UITableView * tableView  = self.tableViews[3];
                 [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionMiddle];
@@ -540,7 +540,7 @@
     for (NSInteger i = index; i<count-index; i++) {
         [self.selectItems removeLastObject];
     }
-    [self.selectItems addObject:[NSNumber numberWithInteger:location.currentID]];
+    [self.selectItems addObject:location.currentID];
 }
 
 //省级别数据源

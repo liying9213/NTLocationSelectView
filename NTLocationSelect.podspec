@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NTLocationSelect"
-  s.version      = "1.1"
+  s.version      = "1.1.1"
   s.summary      = "NTLocationSelect is a shipping address selector."
   s.homepage     = "https://github.com/liying9213/NTLocationSelectView"
   s.license      = "MIT"
